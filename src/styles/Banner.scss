@@ -1,0 +1,26 @@
+@import "/src/styles/styles.scss";
+
+.banner {
+  min-width: 1440px;
+  height: 68px;
+  padding: 45px 100px 45px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .banner-nav {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+    a {
+      text-decoration: none;
+      color: $font-color;
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
