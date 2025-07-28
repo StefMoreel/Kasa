@@ -1,0 +1,36 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 25px;
+    gap: 50px;
+    padding: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    
+    .card{
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        
+    }
+    .card-cover{
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    }
+    .card-title{
+        position: relative;
+        bottom: 65px;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        z-index: 1;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 20px 0 20px;
+
+    }
+}   

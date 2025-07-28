@@ -1,0 +1,16 @@
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 209px;
+  align-items: center;
+  gap: 24px;
+  margin: auto;
+  
+}
+.footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}/*# sourceMappingURL=Footer.css.map */

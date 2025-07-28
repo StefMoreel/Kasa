@@ -1,0 +1,27 @@
+.home-title{
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 45px;
+   
+    .home-title-text{
+        position: absolute;
+        margin: 84px;
+        font-size: 48px;
+        font-weight: 700;
+        color: white;
+        z-index: 1;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    .img-home-title{
+        height: 223px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(0.5);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+

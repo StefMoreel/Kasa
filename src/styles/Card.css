@@ -1,0 +1,17 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 25px;
+  margin-bottom: 45px;
+}
+.cards .card {
+  width: 340px;
+  height: 340px;
+  gap: 60px;
+  border-radius: 10px;
+  background-color: red;
+}/*# sourceMappingURL=Card.css.map */
