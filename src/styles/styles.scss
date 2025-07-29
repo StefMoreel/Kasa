@@ -1,7 +1,18 @@
 $font-color: black;
+$font-family: 'Montserrat', sans-serif;
+$font-color-red: rgba(255, 96, 96, 1);
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+  font-family: 'Montserrat';
+  src: url(/public/Montserrat-VariableFont_wght.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url(/public/fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
 }
 

@@ -22,6 +22,7 @@ function Home_main() {
       {Logements.map(card => (
         <Card
           key={card.id}
+          id={card.id}
           title={card.title}
           cover={card.cover}/>
       ))}
