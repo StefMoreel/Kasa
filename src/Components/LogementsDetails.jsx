@@ -3,11 +3,14 @@ import React from "react";
 import "../styles/styles.scss";
 import "../styles/Banner.scss";
 import "../styles/LogementDetails.scss";
+import "../styles/Collapse.scss";
 import Footer from "./Footer";
 import Logements from "/src/logements-kasa.json";
 import { useParams } from "react-router-dom";
 import Carousel from "./Carousel";
 import Rating from "./Rating";
+import Collapse from "./Collapse";
+
 
 function LogementsDetails() {
   const { id } = useParams();
@@ -56,10 +59,27 @@ function LogementsDetails() {
         </div>
 
         <div className="container-description-equipments">
-          <div className="logement-descritpion">{logement.description}</div>
-          <div className="logmement-equipements">{logement.equipments}</div>
+          <div className="logement-description">
+            <Collapse
+              title="Description"
+              content={logement.description}
+              className="collapse-description"
+            />
+          </div>
+          <div className="logement-equipments">
+            <Collapse
+              title="Équipements"
+              content={
+                <ul>
+                  {logement.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+              }
+            />
+          </div>
         </div>
-      </div>
+      </div>  
       <Footer />
     </div>
   );

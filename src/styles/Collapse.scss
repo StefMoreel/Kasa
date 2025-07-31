@@ -1,0 +1,46 @@
+@import "/src/styles/styles.scss";
+
+.container-description-equipments{
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    .collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $font-color-red;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Montserrat-bold', sans-serif;
+        font-size: 18px;
+        padding: 0 10px;
+        min-width: 582px;
+        height: 52px;
+    }
+    .logement-description, .logement-equipments{
+        flex: 1;
+    }
+    .collapse-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .collapse-content{
+        background-color: rgba(246, 246, 246, 0.45);
+        padding: 20px;
+        font-size: 18px;
+        line-height: 143%;
+        color: $font-color;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 5px;
+
+        
+        ul{
+            list-style-type: none;
+            padding: 20px;
+            }
+    }
+}

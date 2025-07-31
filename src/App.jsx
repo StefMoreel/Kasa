@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import LogementsDetails from "./Components/LogementsDetails";
+import Error from "./Pages/Error";
 import "./styles/styles.scss";
 import "./styles/Banner.scss";
 import { Route, Routes } from "react-router-dom";
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="logement_details/:id" element={<LogementsDetails />} />
-        <Route path="error" element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
