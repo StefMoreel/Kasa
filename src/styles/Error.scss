@@ -5,12 +5,14 @@
     font-family: 'Montserrat-bold', sans-serif;
     font-size: 18em;
     text-align: center;
+    margin: 95px;
 }
 .error-message{
     color: $font-color-red;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.25em;
-    text-align: center;
+    text-align: center;    
+
 }
 .home-link {
     display: block;
@@ -19,6 +21,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     text-decoration: none;
+    margin: 95px;
 
 
     &:hover {

@@ -10,6 +10,7 @@ import { useParams } from "react-router-dom";
 import Carousel from "./Carousel";
 import Rating from "./Rating";
 import Collapse from "./Collapse";
+import Error from "../Pages/Error";
 
 
 function LogementsDetails() {
@@ -17,7 +18,7 @@ function LogementsDetails() {
   const logement = Logements.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <div className="error">Logement non trouvé</div>;
+    return <Error />;
   }
   return (
     <div className="App">
@@ -57,7 +58,7 @@ function LogementsDetails() {
             <Rating value={logement.rating} />
             </div>
         </div>
-
+        
         <div className="container-description-equipments">
           <div className="logement-description">
             <Collapse
