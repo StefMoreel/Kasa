@@ -1,3 +1,5 @@
+@import "/src/styles/Breakpoints.scss";
+
 .footer{
     background-color: black;
     color: white;
@@ -8,9 +10,19 @@
     align-items: center;
     gap: 24px;
     margin-top: 45px;
+    @include mobile{
+        justify-content: center;
+        gap: 0px;
+        margin-top: 10px;
+    }
         p{
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
+        @include mobile{
+            font-size: 12px;
+            width: 130px;
+            text-align: center;
+        }
         }
 }
 

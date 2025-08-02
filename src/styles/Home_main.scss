@@ -1,9 +1,19 @@
+@import "/src/styles/Breakpoints.scss";
+
+
+
 .home-title , .img-about{
     display: flex;
     justify-content: center;
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 45px;
+    @include mobile{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+
    
     .home-title-text{
         position: absolute;
@@ -13,6 +23,11 @@
         color: white;
         z-index: 1;
         font-family: 'Montserrat', sans-serif;
+        @include mobile{
+            margin: 0px;
+            font-size: 24px;
+            padding: 28px 120px 28px 40px;
+        }
         
     }
     .img-home-title, .img-mountain{
@@ -22,6 +37,11 @@
         border-radius: 25px;
         filter: brightness(0.5);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        @include mobile{
+            height: 111px;
+            border-radius: 10px;
+
+        }
     }
 }
 
