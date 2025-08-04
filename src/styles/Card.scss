@@ -10,6 +10,7 @@
     padding: 55px;
     margin-left: 100px;
     margin-right: 100px;
+    
     @include mobile{
         gap: 22px;
         background-color: white;
@@ -23,6 +24,7 @@
         width: 340px;
         height: 340px;
         border-radius: 10px;
+        
         @include mobile{
             width: 335px;
             height: 255px;
@@ -34,6 +36,17 @@
         width: 340px;
         height: 340px;
         border-radius: 10px;
+        @include mobile{
+            width: 335px;
+            height: 255px;
+        }
+    }
+    .gradient{
+        position: absolute;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(10, 10, 10, 0), rgba(4, 4, 4, 0.41), rgba(0, 0, 0, 1));
         @include mobile{
             width: 335px;
             height: 255px;

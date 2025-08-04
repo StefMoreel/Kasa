@@ -1,6 +1,6 @@
 import React from "react";
-import "/src/styles/styles.scss";
-import "/src/styles/Banner.scss";
+import "../styles/styles.scss";
+import "../styles/Banner.scss";
 import { NavLink } from "react-router-dom";
 
 function Banner() {
