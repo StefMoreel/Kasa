@@ -28,6 +28,10 @@
             font-size: 24px;
             padding: 28px 120px 28px 40px;
         }
+        @include tablet{
+            font-size: 36px;
+
+        }
         
     }
     .img-home-title, .img-mountain{
