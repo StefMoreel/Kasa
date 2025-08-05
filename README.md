@@ -1,12 +1,36 @@
-# React + Vite
+# Kasa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application de location immobilière développée en React.
 
-Currently, two official plugins are available:
+## Présentation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Kasa est une application web permettant de consulter des logements disponibles partout en France. Ce projet a pour objectif de reproduire l’interface utilisateur à partir de maquettes, en appliquant les bonnes pratiques React (composants réutilisables, gestion des routes, responsive design…).
 
-## Expanding the ESLint configuration
+## Fonctionnalités principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Affichage d’une liste de logements sur la page d’accueil
+- Fiche détaillée pour chaque logement avec carrousel d’images, description, équipements, etc.
+- Page “À propos” présentant les valeurs de l’entreprise sous forme d’accordéons
+- Gestion des routes et affichage d’une page 404 personnalisée
+- Application responsive et accessible
+
+## Structure du projet
+
+/src
+/assets # Images et styles
+/components # Composants réutilisables (Card, Gallery, Collapse, etc.)
+/pages # Pages principales (Home, Logement, About, Error404)
+/data # Données des logements au format JSON
+App.js # Configuration des routes
+index.js # Point d'entrée de l'application
+
+
+## Choix techniques
+
+- **React** pour la gestion de l’interface utilisateur
+- **React Router** pour la navigation entre les pages
+- **Données locales** en JSON pour simplifier le développement (pas d’appel API)
+- **Responsive design** pour une compatibilité sur mobile et desktop
+- **Accessibilité** prise en compte (navigation au clavier, aria-labels sur les éléments interactifs)
+
+
