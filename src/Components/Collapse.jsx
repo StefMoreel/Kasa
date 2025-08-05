@@ -1,4 +1,8 @@
 import { useRef, useState } from "react";
+import collapseArrow from "../assets/Logements_Details/collapse_arrow_open.png"
+
+// Composant de création du collapse
+// Au clic sur le bouton, animation de rotation de la flèche à 180deg, ouverture du collapse et affichage du contenu récupéré depuis le json
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +19,7 @@ function Collapse({ title, content }) {
         <button className="collapse-button" onClick={toggleCollapse}>
           <img
             className={isOpen ? "rotated" : ""}
-            src="/src/assets/Logements_Details/collapse_arrow_open.png"
+            src={collapseArrow}
             alt="collapse arrow"  
           />
         </button>

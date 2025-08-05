@@ -12,6 +12,10 @@ import Rating from "./Rating";
 import Collapse from "./Collapse";
 import Error from "../Pages/Error";
 
+// Composant de la page de détails
+// Utilisation du hook useParams de reactRouter permet de retourner les datas de l'id du logement cliqué : pictures, titre, lieu, nom et photo du propriétaire, classement et tags
+// Gestion de la redirection vers la page d'erreur si l'id du logement n'est pas trouvé
+
 
 function LogementsDetails() {
   const { id } = useParams();

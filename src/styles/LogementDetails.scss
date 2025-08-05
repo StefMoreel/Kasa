@@ -59,6 +59,14 @@
         right: 0%;
 
     }
+    .carousel-counter{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        font-size: 18px;
+        font-family: $font-family;
+        color: white;
+    }
 }
 .container-title-location-host-container-tags-rating{
     display: flex;
