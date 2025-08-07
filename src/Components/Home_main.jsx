@@ -2,8 +2,9 @@ import React from "react";
 import "../styles/styles.scss";
 import "../styles/Home_main.scss";
 import Card from "./Card";
-import Logements from "/src/logements-kasa.json"
 import img_homePage from "../assets/HomePage/background-img-homepage.jpg"
+import { useState, useEffect } from "react";
+import { getData } from "../api/GetData";
 
 // Composant "main" de la page d'accueil
 // Affichage de l'image et du titre
@@ -11,6 +12,11 @@ import img_homePage from "../assets/HomePage/background-img-homepage.jpg"
 
 function Home_main() {
 
+  const [logements, setLogements] = useState([]); 
+  
+  useEffect(() => {
+    getData().then(setLogements);
+  }, []);
 
   return (
     <div>
@@ -25,7 +31,7 @@ function Home_main() {
       </div>
     </div>
     <div className="cards">
-      {Logements.map(card => (
+      {logements.map(card => (
         <Card
           key={card.id}
           id={card.id}

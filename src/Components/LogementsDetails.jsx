@@ -1,29 +1,47 @@
 import Banner from "./Banner";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/styles.scss";
 import "../styles/Banner.scss";
 import "../styles/LogementDetails.scss";
 import "../styles/Collapse.scss";
 import Footer from "./Footer";
-import Logements from "/src/logements-kasa.json";
+import { getData } from "../api/GetData";
 import { useParams } from "react-router-dom";
 import Carousel from "./Carousel";
 import Rating from "./Rating";
 import Collapse from "./Collapse";
 import Error from "../Pages/Error";
 
+
 // Composant de la page de détails
-// Utilisation du hook useParams de reactRouter permet de retourner les datas de l'id du logement cliqué : pictures, titre, lieu, nom et photo du propriétaire, classement et tags
+// Utilisation du hook useParams de reactRouter permet de retourner les datas de l'id du logement cliqué
 // Gestion de la redirection vers la page d'erreur si l'id du logement n'est pas trouvé
 
 
 function LogementsDetails() {
   const { id } = useParams();
-  const logement = Logements.find((logement) => logement.id === id);
+    // Initialisation de l'état : 
+      //  logement stockera le logement à afficher.
+      //  loading est true pendant que la donnée est en train d’être chargée.
+  const [logement, setLogement] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  if (!logement) {
-    return <Error />;
-  }
+    // Chargement des données :
+  useEffect(() => {
+      // getData va charger tous les logement
+    getData().then((logements) => {
+        // on cherche dans le tableau celui qui correspond à l’id
+      const found = logements.find((l) => l.id === id);
+        // On stocke ce logement dans le state avec setLogement
+      setLogement(found);
+        //On met loading à false pour indiquer que le chargement est terminé.
+      setLoading(false);
+    });
+  }, [id]);
+
+  if (loading) return <div>Chargement…</div>;
+  if (!logement) return <Error />;
+  
   return (
     <div className="App">
       <Banner />
