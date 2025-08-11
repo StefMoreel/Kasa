@@ -1,19 +1,19 @@
-import Banner from "./Banner";
+import Banner from "../components/Banner";
 import React, { useState, useEffect } from "react";
 import "../styles/styles.scss";
 import "../styles/Banner.scss";
 import "../styles/LogementDetails.scss";
 import "../styles/Collapse.scss";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 import { getData } from "../api/GetData";
 import { useParams } from "react-router-dom";
-import Carousel from "./Carousel";
-import Rating from "./Rating";
-import Collapse from "./Collapse";
-import Error from "../Pages/Error";
+import Carousel from "../components/Carousel";
+import Rating from "../components/Rating";
+import Collapse from "../components/Collapse";
+import Error from "./Error";
 
 
-// Composant de la page de détails
+// Page de détails des logements
 // Utilisation du hook useParams de reactRouter permet de retourner les datas de l'id du logement cliqué
 // Gestion de la redirection vers la page d'erreur si l'id du logement n'est pas trouvé
 

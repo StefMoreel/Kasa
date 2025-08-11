@@ -1,10 +1,10 @@
-import Banner from "../Components/Banner";
+import Banner from "../components/Banner";
 import React from 'react';
 import '../styles/styles.scss';
 import '../styles/Banner.scss';
 import '../styles/Error.scss';
 
-import Footer from "../Components/Footer";
+import Footer from "../components/Footer";
 import { NavLink } from 'react-router-dom';
 
 function Error(){

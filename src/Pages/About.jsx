@@ -1,11 +1,11 @@
-import Banner from "../Components/Banner";
+import Banner from "../components/Banner";
 import React from 'react';
 import '../styles/styles.scss';
 import '../styles/Banner.scss';
 import '../styles/Home_main.scss';
 import '../styles/Collapse.scss';
-import Collapse from "../Components/Collapse";
-import Footer from "../Components/Footer";
+import Collapse from "../components/Collapse";
+import Footer from "../components/Footer";
 
 
 

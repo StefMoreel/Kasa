@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/styles.scss";
 import "../styles/Home_main.scss";
-import Card from "./Card";
+import Card from "../components/Card.jsx";
 import img_homePage from "../assets/HomePage/background-img-homepage.jpg"
 import { useState, useEffect } from "react";
 import { getData } from "../api/GetData";
