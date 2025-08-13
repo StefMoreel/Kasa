@@ -1,5 +1,5 @@
-@import "/src/styles/styles.scss";
-@import "/src/styles/Breakpoints.scss";
+@use "/src/styles/styles.scss" as *;
+@use "/src/styles/Breakpoints.scss" as *;
 
 .error-title{
     display: flex;

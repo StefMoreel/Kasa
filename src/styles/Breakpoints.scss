@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $breakpoints: (
   "mobile": 0px,
   "tablet": 768px,
@@ -7,28 +9,28 @@ $breakpoints: (
 
 
 @mixin mobile {
-    $tablet-max: calc(#{map-get($breakpoints, "tablet")} - 1px);
-    @media screen and (min-width: map-get($breakpoints, "mobile")) and (max-width: #{$tablet-max}) {
+    $tablet-max: calc(#{map.get($breakpoints, "tablet")} - 1px);
+    @media screen and (min-width: map.get($breakpoints, "mobile")) and (max-width: #{$tablet-max}) {
         @content;
     }
 }
 
 @mixin tablet {
-    $desktop-max: calc(#{map-get($breakpoints, "desktop")} - 1px);
-    @media screen and (min-width: map-get($breakpoints, "tablet")) and (max-width: #{$desktop-max}) {
+    $desktop-max: calc(#{map.get($breakpoints, "desktop")} - 1px);
+    @media screen and (min-width: map.get($breakpoints, "tablet")) and (max-width: #{$desktop-max}) {
         @content;
     }
 }
 
 @mixin desktop {
-    $widescreen-max: calc(#{map-get($breakpoints, "widescreen")} - 1px);
-    @media screen and (min-width: map-get($breakpoints, "desktop")) and (max-width: #{$widescreen-max}) {
+    $widescreen-max: calc(#{map.get($breakpoints, "widescreen")} - 1px);
+    @media screen and (min-width: map.get($breakpoints, "desktop")) and (max-width: #{$widescreen-max}) {
         @content;
     }
 }
 
 @mixin widescreen {
-    @media (max-width : map-get($breakpoints, "widescreen")){
+    @media (max-width : map.get($breakpoints, "widescreen")){
         @content;
     }
 }
