@@ -1,5 +1,5 @@
 export function getData(){
-    return fetch("http://localhost:5173/logements-kasa.json", {
+    return fetch("${import.meta.env.BASE_URL}logements-kasa.json", {
         headers : {
             'Content-Type' : 'application/json',
             'Accept' : 'application/json'
