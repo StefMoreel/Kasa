@@ -6,7 +6,7 @@ import './styles/styles.scss';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Kasa">
       <App />
 
     </BrowserRouter>
