@@ -1,0 +1,19 @@
+warning: in the working copy of 'src/pages/Home.jsx', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/pages/Home.jsx b/src/pages/Home.jsx[m
+[1mindex f02a211..a5090a4 100644[m
+[1m--- a/src/pages/Home.jsx[m
+[1m+++ b/src/pages/Home.jsx[m
+[36m@@ -1,10 +1,10 @@[m
+[31m-import Banner from "../components/Banner";[m
+[32m+[m[32mimport Banner from "../components/Banner.jsx";[m
+ import React from 'react';[m
+ import '../styles/styles.scss';[m
+ import '../styles/Banner.scss';[m
+[31m-import Footer from "../components/Footer";[m
+[32m+[m[32mimport Footer from "../components/Footer.jsx";[m
+ import '../styles/Footer.scss';[m
+[31m-import Home_main from "../Components/Home_main";[m
+[32m+[m[32mimport Home_main from "../components/Home_main.jsx";[m
+ [m
+ function Home(){[m
+   return ( [m

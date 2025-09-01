@@ -1,10 +1,10 @@
-import Banner from "../components/Banner";
+import Banner from "../components/Banner.jsx";
 import React from 'react';
 import '../styles/styles.scss';
 import '../styles/Banner.scss';
-import Footer from "../components/Footer";
+import Footer from "../components/Footer.jsx";
 import '../styles/Footer.scss';
-import Home_main from "../Components/Home_main";
+import Home_main from "../components/Home_main.jsx";
 
 function Home(){
   return ( 
