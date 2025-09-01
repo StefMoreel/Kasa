@@ -6,6 +6,7 @@ import '../styles/Home_main.scss';
 import '../styles/Collapse.scss';
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
+import imgMountain from "../assets/About/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png"
 
 
 
@@ -14,7 +15,7 @@ function About(){
     <div className="App">
       <Banner />
       <div className="img-about">
-        <img className="img-mountain" src="/src/assets/About/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png" alt="Photo d'une montagne" />
+        <img className="img-mountain" src={imgMountain} alt="Photo d'une montagne" />
       </div>
       <div className="collapses-about-container">
         <div className="about-collapses">
