@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import LogementsDetails from "./pages/LogementsDetails";
-import Error from "./pages/Error";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import LogementsDetails from "./pages/LogementsDetails.jsx";
+import Error from "./pages/Error.jsx";
 import "./styles/styles.scss";
 import "./styles/Banner.scss";
 import { Route, Routes } from "react-router-dom";
