@@ -5,7 +5,7 @@ import "../styles/Banner.scss";
 import "../styles/LogementDetails.scss";
 import "../styles/Collapse.scss";
 import Footer from "../components/Footer";
-import { getData } from "../api/GetData";
+import { getData } from "../api/getData";
 import { useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Rating from "../components/Rating";
