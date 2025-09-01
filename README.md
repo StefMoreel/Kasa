@@ -1,6 +1,6 @@
 # Kasa
 
-Application de location immobilière développée en React.
+Application de location immobilière développée en React : https://stefmoreel.github.io/Kasa
 
 ## Présentation
 
