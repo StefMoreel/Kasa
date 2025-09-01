@@ -4,7 +4,7 @@ import "../styles/Home_main.scss";
 import Card from "../components/Card.jsx";
 import img_homePage from "../assets/HomePage/background-img-homepage.jpg"
 import { useState, useEffect } from "react";
-import { getData } from "../api/GetData";
+import { getData } from "../api/getData";
 
 // Composant "main" de la page d'accueil
 // Affichage de l'image et du titre
