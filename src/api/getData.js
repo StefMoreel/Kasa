@@ -1,9 +1,7 @@
-export function getData(){
-    return fetch("${import.meta.env.BASE_URL}logements-kasa.json", {
-        headers : {
-            'Content-Type' : 'application/json',
-            'Accept' : 'application/json'
-        }
-    })
-    .then(response => response.json());
+export async function getData() {
+  const url = `${import.meta.env.BASE_URL}logements-kasa.json`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status} on ${url}`);
+  return res.json();
 }
+
